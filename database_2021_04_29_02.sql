@@ -1,0 +1,12 @@
+SHOW DATABASES;
+USE mydata;
+SHOW TABLES;
+DESC customer_db;
+ALTER TABLE customer_db ADD COLUMN model_type VARCHAR(10) NOT NULL;
+DESC customer_db;
+ALTER TABLE customer_db MODIFY COLUMN name VARCHAR(20) NOT NULL;
+DESC customer_db;
+ALTER TABLE customer_db CHANGE COLUMN name modelname VARCHAR(10);
+DESC customer_db;
+ALTER TABLE customer_db DROP COLUMN age;
+DESC customer_db;
