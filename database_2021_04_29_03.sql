@@ -1,0 +1,18 @@
+CREATE DATABASE dave;
+USE dave;
+CREATE TABLE mytable (
+	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    modelnumber VARCHAR(50) NOT NULL,
+    ceries VARCHAR(30) NOT NULL,
+    PRIMARY KEY(id)
+);
+SHOW TABLES;
+DESC mytable;
+ALTER TABLE mytable CHANGE COLUMN modelnumber model_num VARCHAR(10);
+ALTER TABLE mytable CHANGE COLUMN ceries model_type VARCHAR(10);
+DESC mytable;
+ALTER TABLE mytable MODIFY COLUMN model_num VARCHAR(10) NOT NULL;
+ALTER TABLE mytable MODIFY COLUMN model_type VARCHAR(10) NOT NULL;
+ALTER TABLE mytable MODIFY COLUMN name VARCHAR(20) NOT NULL;
+DESC mytable;
